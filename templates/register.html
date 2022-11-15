@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../static/css/normalize.css">
+  <link rel="stylesheet" href="../static/css/skeleton.css">
+<link rel="icon" type="image/png" href="../static/logo.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+    .login {
+    font-size:1.5em; 
+    font-weight: 300;
+    line-height:1em;
+    text-align: right;
+    color: #fa954d;
+  }
+  h1 {
+    position:absolute;
+  color: green;
+}
+
+</style>
+
+    <title>Register</title>
+    <script type="text/javascript">
+        function empty() {
+        var x;
+        var y;
+        x = document.getElementById("pwd").value;
+        y=document.getElementById("confirm_pwd").value;
+        var email = $("#email").val();
+        if (email == "" ) {
+        alert("Your Email is empty");
+        return false;
+        }
+        else if ( x=="" ) {
+        alert("Your Password is empty");
+        return false;
+        }
+        else if (x != y) {
+            alert("Password and confirm_Password are not same");
+            return false;
+        }
+        else
+        {
+            var email = $("#email").val();
+       
+      
+        $.post("/email_check", { email: email,pwd:x}, function(data) {
+           
+            if (data != "") {
+                alert(data);
+        
+            // $("#displaymessage").html(data);
+            // $("#displaymessage").show();
+    }
+        });
+           
+
+        }
+        
+    }
+    </script>
+    <!-- <script>
+        // $(document).on("click", ".btn", function(){
+    
+        // var email = $("#email").val();
+        // if (email == "") {
+        // alert("Enter something in text box");
+        // }
+        // else{
+        // $.post("/email_check", { email: email}, function(data) {
+        //     alert(data);
+        //     $("#displaymessage").html(data);
+        //     $("#displaymessage").show();
+           
+        // });
+        $(document).ready(function() {
+    $('form').on('submit', function(event) {    
+      $.ajax({
+         data : {
+            email : $('#email').val(),  
+            pwd: $('#pwd').val(),        
+                },
+            type : 'POST',
+            url : '/email_check'
+           })           
+       .done(function(data) {                 
+        $('#response').text(data['response']).show();        
+     });
+     event.preventDefault();
+    });     
+        // }
+    
+
+    } );
+    </script> -->
+</head>
+<body>
+    <div class="login">  
+        <a href="/login">login</a>   
+        </div>
+        <div class="header">
+            
+    <h1><p class="italic">  {{ msg }}</p> </h1>
+    </div>
+    <!-- <div class='btn btn-info' id="displaymessage" style="display:none;width:100%;margin-top:10px;"></div> -->
+    <!-- <h1><p id="response"></p></h1> -->
+    <form action="/register" method="post" enctype="multipart/form-data">
+    <label for="firstname">Sign Up:</label>
+    <input type="text" id="email" name="email" placeholder="Email_id">
+    <input type="text" id="pwd" name="pwd" placeholder="Password">
+    <input type="text" id="confirm_pwd" name="confirm_pwd" placeholder="Confirm Password">
+    <!-- <button type="submit"> Pose ta question :) </button> -->
+    <input type="submit"   onClick="return empty()" >
+    <!-- <button type="submit" onClick="return empty()">Predict</button> -->
+</form>
+</body>
+</html>

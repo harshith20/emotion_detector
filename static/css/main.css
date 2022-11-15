@@ -1,0 +1,54 @@
+body{
+  display: inline-block;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-family: 'Brush Script MT', cursive;
+  width: 100vh;
+  height: 100vh;
+  background:url(https://wallpaperaccess.com/full/2878903.jpg)
+      no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+ }
+
+
+header {
+  background-color: grey;
+  position:relative !important;
+  margin-bottom: 0px !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+  font-size: 1.5em;
+}
+
+header * {
+  display: inline;
+  
+  
+}
+
+header li {
+  margin: 30px;
+  
+}
+
+header li a {
+  
+  color: black;
+  text-decoration: none;
+}
+h1{
+  display:inline-block ;
+  font-size: 5em;
+  margin-top: 0.67em;
+  bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
