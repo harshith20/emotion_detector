@@ -1,5 +1,5 @@
-nltk.download('omw-1.4')
 import nltk
+nltk.download('punkt')
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
