@@ -7,8 +7,8 @@ from flask_login import LoginManager, UserMixin, login_required, login_user, log
 from forms import LoginForm
 from text_cleaning import text_cleaning
 import pandas as pd
-# import matplotlib
-# import matplotlib.pyplot as plt
+import matplotlib
+import matplotlib.pyplot as plt
 matplotlib.use('Agg')
 app = Flask(__name__)
 app.debug=True
