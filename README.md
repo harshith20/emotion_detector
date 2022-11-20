@@ -4,7 +4,7 @@ Machine learning model to predict emotions throught text
 # Table of Contents
 
 1. [Objective](#Objective)
-2. [Ml_algo](# Ml_algo)
+2. [Ml_algo](#Ml_algo)
 3. [Backend](#Backend)
 4. [Frontend](#Frontend)
 
