@@ -4,7 +4,7 @@ Machine learning model to predict emotions throught text
 # Table of Contents
 
 1. [Objective](#Objective)
-2. [ Machine learning algo](# Machine learning algo)
+2. [Ml_algo](# Ml_algo)
 3. [Backend](#Backend)
 4. [Frontend](#Frontend)
 
@@ -13,16 +13,18 @@ Machine learning model to predict emotions throught text
 ## Objective
 I want to create an app where user can write his/her diary and analyze themself with the help of sentiment analysis algorithm.
 
-## Machine learning algo
--I have developed emotion detection model using TFIDF  vectorization method . I have used word2vec and doc 2 vec too but  got more accuracy with TFIDF vectorizer.
+## Ml_algo
+-I have developed emotion detection model using TFIDF  vectorization method .
+I have used word2vec and doc 2 vec too but  got more accuracy with TFIDF vectorizer.
 
 TFIDF  vectorizer is easy to use method 
 https://towardsdatascience.com/natural-language-processing-feature-engineering-using-tf-idf-e8b9d00e7e76
-Removed  stop words  using NLTK  and cleaned text before vectorizing the text
-Used Random forest classification as it is good at large data sets
+
+Removed  stop words  using NLTK  and cleaned text before vectorizing the text.
+Used Random forest classification as it is good at large data sets.
 
 ## Backend
-I’ve used Flask  to develop the  web app. And chose SQLITE as database connecting method as  I’m restricting maximum no of users 
+I’ve used Flask  to develop the  web app. And chose SQLITE as database connecting method as  I’m restricting maximum no of users .
 Created Two tables login and diary for data storage  .I’ve created triggers to keep both tables in sync
 
 ## Frontend
