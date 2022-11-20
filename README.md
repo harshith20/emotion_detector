@@ -15,7 +15,7 @@ I want to create an app where user can write his/her diary and analyze thier emo
 
 ## Ml_algo
 -I have developed emotion detection model using TFIDF  vectorization method .
-I have used word2vec and doc 2 vec too but  got more accuracy with TFIDF vectorizer.
+ used word2vec and doc 2 vec too but  got more accuracy with TFIDF vectorizer.
 
 TFIDF  vectorizer is easy to use method 
 https://towardsdatascience.com/natural-language-processing-feature-engineering-using-tf-idf-e8b9d00e7e76
@@ -25,7 +25,7 @@ Used Random forest classification as it is good at large data sets.
 
 ## Backend
 I’ve used Flask  to develop the  web app. And chose SQLITE as database connecting method as  I’m restricting maximum no of users .
-Created Two tables login and diary for data storage  .I’ve created triggers to keep both tables in sync
+Created Two tables login and diary for data storage  and created triggers to keep both tables in sync
 
 ## Frontend
 I’ve created js file along with html to run various functions within the page .
