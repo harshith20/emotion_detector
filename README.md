@@ -11,7 +11,7 @@ Machine learning model to predict emotions throught text
 
 
 ## Objective
-I want to create an app where user can write his/her diary and analyze themself with the help of sentiment analysis algorithm.
+I want to create an app where user can write his/her diary and analyze thier emotions with the help of sentiment analysis algorithm.
 
 ## Ml_algo
 -I have developed emotion detection model using TFIDF  vectorization method .
