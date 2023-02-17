@@ -1,6 +1,8 @@
 # emotion_detector
 An End to End Python Web App using Flask to Predict Emotions with Natural Language Processing
 
+![image](https://user-images.githubusercontent.com/73159496/202917018-ff0221c2-50d6-4524-8ab7-93ae19c17787.png)
+
 # Table of Contents
 
 1. [Objective](#Objective)
