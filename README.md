@@ -1,5 +1,5 @@
 # emotion_detector
-Machine learning model to predict emotions throught text
+An End to End Python Web App using Flask to Predict Emotions with Natural Language Processing
 
 # Table of Contents
 
